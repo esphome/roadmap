@@ -1,0 +1,109 @@
+name: Roadmap Opportunity
+description: For Open Home Foundation staff only - Log an idea or propose a roadmap opportunity
+type: Opportunity
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ RESTRICTED ACCESS
+
+        **This form is restricted to Open Home Foundation staff and authorized contributors only.**
+
+        If you are a community member wanting to suggest a feature or improvement, please use [Feature Requests](https://github.com/orgs/esphome/discussions) instead. The product team monitors these and incorporates relevant signals into roadmap items.
+
+        ---
+
+        ### For authorized contributors
+
+        Thanks for adding to the roadmap! 🗺️
+
+        This form covers everything from early ideas and hunches to fully shaped opportunities ready for the betting table. Fill in what you can — not every field is relevant at every stage.
+
+        Before submitting, please search existing issues to avoid duplicates.
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem statement
+      description: |
+        Describes the problem you want to solve. Include who is impacted by the problem and why solving it matters to them or to OHF. Clearly link back to OHF's goals.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & Boundaries
+      description: |
+        Define what we plan to achieve, and what we already consider out of scope for this opportunity. Be specific about what is included and what is explicitly excluded to prevent scope creep.
+      value: |
+        #### In scope
+          -
+
+        #### Not in scope
+          -
+    validations:
+      required: false
+
+  - type: textarea
+    id: foreseen_solution
+    attributes:
+      label: Foreseen solution
+      description: |
+        The foreseen solution solving the problem described above, shaped enough to understand what the solution is and what it means to build it. This is a starting point for discussion and an eventual decision on if we want to build it, not a detailed specification. A low-fidelity way of visualizing the solution is welcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: community_feedback
+    attributes:
+      label: Community signals
+      description: |
+        What prompted this? Link to any Discussions, feature requests, Discord threads, or other signals that informed this item. Leave blank if this came from internal thinking.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks_and_open_questions
+    attributes:
+      label: Risks & open questions
+      description: |
+        What are we uncertain about? Are there technical, UX, or strategic risks? How do we plan to address or investigate them?
+    validations:
+      required: false
+
+  - type: textarea
+    id: appetite
+    attributes:
+      label: Appetite
+      description: |
+        Roughly how much time are we willing to invest in this opportunity? Use relative sizing (e.g. small / medium / large) or cycle count. This is not a commitment but rather a signal to help prioritise at the betting table.
+      placeholder: |
+        Example: Medium — roughly 1–2 cycles of focused work across frontend and core.
+    validations:
+      required: false
+
+  - type: textarea
+    id: execution_issues
+    attributes:
+      label: Execution issues
+      description: |
+        Populated once a bet is approved. Add links to the tracking issues created in core, frontend, and any other relevant repositories.
+      placeholder: |
+        - esphome/esphome#12345
+        - esphome/dashboard#67890
+    validations:
+      required: false
+
+  - type: textarea
+    id: decision_log
+    attributes:
+      label: Decision log
+      description: |
+        Record key decisions, pivots, and betting table outcomes with dates. This helps contributors understand the history of the item and reduces repetitive discussions.
+      value: |
+        | Date | Decision | Outcome |
+        |------|----------|---------|
+        |      |          |         |
+    validations:
+      required: false

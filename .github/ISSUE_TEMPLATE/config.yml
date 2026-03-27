@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🚀 Feature Requests
+    url: https://github.com/orgs/esphome/discussions
+    about: Submit feature requests and ideas that may influence the roadmap
+  - name: 🐛 Bug Reports - ESPHome
+    url: https://github.com/esphome/esphome/issues
+    about: Report bugs in ESPHome Core
+  - name: 💬 Community Support
+    url: https://discord.gg/KhAMKrd
+    about: Get help from the community
+  - name: 📚 Documentation
+    url: https://esphome.io/
+    about: Read the ESPHome documentation
